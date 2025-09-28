@@ -82,6 +82,3 @@ RickAndMortyApp/
 - [Documentación de la API](https://rickandmortyapi.com/documentation)
 - [Guía de SwiftUI](https://developer.apple.com/tutorials/swiftui)
 - [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/)
-
----
-¿Necesitas extender la documentación (por ejemplo, diagramas o automatización de tests)? ¡No dudes en abrir un issue o PR con tus mejoras!
