@@ -320,12 +320,19 @@ class CharactersViewModel: ObservableObject {
             
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 DispatchQueue.main.async {
-                    self.isAuthenticated = true
+                    if success {
+                        self.isAuthenticated = true
+                    } else {
+                        self.isAuthenticated = false
+                    }
                 }
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.isAuthenticated = false
             }
         }
     }
-
 }
 
 enum ActiveSheet: Identifiable {
